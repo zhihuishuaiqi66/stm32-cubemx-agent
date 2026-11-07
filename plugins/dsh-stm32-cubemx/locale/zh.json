@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "STM32CubeMX 自动化",
+    "description": "通过 STM32CubeMX 官方命令行查询 .ioc、配置引脚/外设并生成 HAL 工程，无需打开图形界面，写入前事务校验。"
+  }
+}

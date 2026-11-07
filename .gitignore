@@ -1,0 +1,19 @@
+# generated HAL projects and local build outputs
+generated/
+build/
+**/build/
+**/node_modules/
+
+# plugin backups / temporary write artifacts
+*.bak
+*.bak-*
+*.new
+*.tmp
+*.log
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

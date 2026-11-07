@@ -1,0 +1,37 @@
+{
+  "name": "@local/dsh-stm32-cubemx",
+  "version": "1.6.0",
+  "private": true,
+  "type": "module",
+  "description": "Drive STM32CubeMX from its official command line: inspect .ioc projects, configure pins/peripherals transactionally, and generate HAL projects without opening the GUI.",
+  "icon": "icon.svg",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "CHANGELOG.md",
+    "smoke-test.ps1"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "stm32",
+    "cubemx",
+    "embedded"
+  ],
+  "license": "MIT"
+}

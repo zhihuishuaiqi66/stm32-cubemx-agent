@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "STM32CubeMX Automation",
+    "description": "Inspect .ioc projects, configure pins/peripherals, and generate HAL projects through the official CubeMX CLI — no GUI, transactional writes."
+  }
+}

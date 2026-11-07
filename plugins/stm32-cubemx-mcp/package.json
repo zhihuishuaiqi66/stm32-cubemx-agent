@@ -1,0 +1,31 @@
+{
+  "name": "stm32-cubemx-mcp",
+  "version": "1.3.0",
+  "private": true,
+  "type": "module",
+  "description": "MCP stdio server + CLI that expose the dsh-stm32-cubemx tools (10 tools) to any MCP client or shell: inspect .ioc projects, configure pins/peripherals transactionally, set clocks, NVIC, DMA, create projects and generate HAL code through the official STM32CubeMX CLI. Zero npm dependencies.",
+  "main": "./server.mjs",
+  "bin": {
+    "stm32-cubemx-mcp": "./server.mjs",
+    "stm32-cubemx": "./cli.mjs"
+  },
+  "files": [
+    "server.mjs",
+    "cli.mjs",
+    "README.md",
+    "SKILL.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "stm32",
+    "cubemx",
+    "embedded",
+    "claude-code",
+    "codex"
+  ],
+  "license": "MIT"
+}

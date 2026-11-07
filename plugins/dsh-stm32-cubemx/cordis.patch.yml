@@ -1,0 +1,20 @@
+# Bundle patch layer for the STM32CubeMX automation plugin (host-only).
+# Adjust mxHome to the machine that runs CubeMX.
+#
+# allowAnyPath: true   => this plugin may replace .ioc files and generate projects
+#                         anywhere on this machine (global writes).
+# allowGuiRunning: false => refuse writes while the CubeMX GUI is running, because
+#                         the GUI can overwrite the plugin's .ioc changes when it
+#                         saves. Set true to bypass the check.
+# Set allowAnyPath to false and list allowedRoots to restrict writes again.
+- insert:
+    - id: stm32-cubemx
+      name: '@local/dsh-stm32-cubemx'
+      config:
+        mxHome: 'C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeMX'
+        allowAnyPath: true
+        allowGuiRunning: false
+        allowedRoots: []
+        # 预检 .ioc 的 CubeMX/固件包版本；不一致时直接报错而不是让 CubeMX CLI
+        # 弹出迁移对话框把调用挂死。确认要强行尝试旧工程时改成 false。
+        checkProjectVersion: true

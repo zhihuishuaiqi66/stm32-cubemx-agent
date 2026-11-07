@@ -1,0 +1,19 @@
+NOTICE
+
+This repository is an independent, unofficial project. It is not affiliated
+with, endorsed by, or sponsored by STMicroelectronics.
+
+This repository does NOT contain:
+  - STM32CubeMX or any of its runtime files
+  - STM32Cube firmware packages (e.g. STM32Cube_FW_F1, STM32Cube_FW_F4)
+  - ST HAL / CMSIS driver sources, startup files or linker scripts
+
+To use these tools you must install STM32CubeMX and the matching firmware
+package yourself, and accept STMicroelectronics' license terms for them.
+
+The example `.ioc` files under samples/ are configuration data produced by
+STM32CubeMX for demonstration; generated HAL projects are intentionally not
+committed.
+
+STM32 and STM32CubeMX are trademarks of STMicroelectronics. All other
+trademarks are the property of their respective owners.
